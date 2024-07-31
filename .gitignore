@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Vehicles/.vs/Vehicles
+/Vehicles/Vehicles/x64/Debug
+/Vehicles/x64/Debug
+/Vehicles/Vehicles.vcxproj.filters
+/Vehicles/Vehicles.vcxproj.user
+/git-config-local.bat
