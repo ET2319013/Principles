@@ -91,7 +91,6 @@ public:
 	//TODO: create definitions
 	void set_length(unsigned int length);
 	unsigned int get_length();
-
 	void set_hull_type(HULL_TYPE hull_type);
 	HULL_TYPE get_hull_type();
 private:
