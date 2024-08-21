@@ -11,7 +11,7 @@ enum BODY_TYPE {
 };
 
 enum ENGINE_TYPE {
-	NO_ENGINE_TYPE = -1, // 
+	NO_ENGINE_TYPE = -1, 
 	JET = 0,
 	TURBOPROP = 1,
 	TURBOSHAFT = 2,
@@ -19,9 +19,14 @@ enum ENGINE_TYPE {
 };
 
 enum HULL_TYPE {
-	NO_HULL_TYPE = -1, // 
-	DISPLACEMENT = 0
-	//TODO: continue from https://www.ilearntoboat.com/blog/boat-hull-types-styles/
+	NO_HULL_TYPE = -1,
+	DISPLACEMENT = 0,
+	PLANING = 1,
+	PONTOON = 2,
+	FLATBOTTOMED = 3,
+	ROUNDBOTTOMED = 4,
+	VSHAPED = 5,
+	MULTIHULLED = 6
 };
 
 class Vehicle
@@ -69,7 +74,6 @@ public:
 
 	void print();
 
-	//TODO: definitions
 	void set_no_engines(unsigned int no_engines);
 	unsigned int get_no_engines();
 
@@ -88,7 +92,6 @@ public:
 
 	void print();
 
-	//TODO: create definitions
 	void set_length(unsigned int length);
 	unsigned int get_length();
 	void set_hull_type(HULL_TYPE hull_type);

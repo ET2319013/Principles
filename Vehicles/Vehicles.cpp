@@ -20,6 +20,21 @@ int main()
     vehicle_ptr = new Car(2000, "USA", "Ford", BODY_TYPE::HATCHBACK);
     vehicles.push_back(vehicle_ptr);
 
+    vehicle_ptr = new Car(1992, "Russia", "Lada", BODY_TYPE::SEDAN);
+    vehicles.push_back(vehicle_ptr);
+
+    vehicle_ptr = new Airplane(2001, "USA", "Boeing", 2, ENGINE_TYPE::JET);
+    vehicles.push_back(vehicle_ptr);
+
+    vehicle_ptr = new Airplane(2003, "France", "Airbus", 2, ENGINE_TYPE::JET);
+    vehicles.push_back(vehicle_ptr);
+
+    vehicle_ptr = new Boat(2004, "USA", "LOWE", 13, HULL_TYPE::VSHAPED);
+    vehicles.push_back(vehicle_ptr);
+
+    vehicle_ptr = new Boat(2002, "Germany", "Hannover Boats", 15, HULL_TYPE::PLANING);
+    vehicles.push_back(vehicle_ptr);
+
     //TODO: add examples with 
 
     for (auto it : vehicles)
@@ -31,5 +46,9 @@ int main()
     {
         delete it;
     }
+
+    if (vehicle_ptr != nullptr)
+        delete vehicle_ptr;
+
 }
 
