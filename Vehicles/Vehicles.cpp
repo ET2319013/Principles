@@ -35,20 +35,18 @@ int main()
     vehicle_ptr = new Boat(2002, "Germany", "Hannover Boats", 15, HULL_TYPE::PLANING);
     vehicles.push_back(vehicle_ptr);
 
-    //TODO: add examples with 
-
     for (auto it : vehicles)
     {
         it->print();
     }
 
+    std::cout << "Finished. Press any key";
+    char c;
+    std::cin >> c;
+
     for (auto it : vehicles)
     {
         delete it;
     }
-
-    if (vehicle_ptr != nullptr)
-        delete vehicle_ptr;
-
 }
 
